@@ -1,26 +1,28 @@
 #include <stdio.h>
-#include <math.h>
+
+float m, n;
+
+void myFunction() {
+	printf("Hoa hong cua ban la: %f", n);
+}
 
 int main() {
-	float m;
 	
-	printf("Nhap vao doanh thu cua ban: ");
-	
+	printf("Nhap vao doanh so cua ban: ");
 	scanf("%f", &m);
 	
 	if (m <= 100) {
-		float n = m * 0.05;
-		printf("Hoa hong cua ban la: %f", n);
+		n = m * 0.05;
+		myFunction();
+	}
+	
+	else if (m <= 300) {
+		n = m * 0.1;
+		myFunction();
 	}
 	
 	else {
-		if (m <= 300) {
-			float n = m * 0.1;
-			printf("Hoa hong cua ban la: %f", n);
-		}
-		else {
-			float n = m * 0.2;
-			printf("Hoa hong cua ban la: %f", n);
-		}
+		n = m * 0.2;
+		myFunction();
 	}
 }
