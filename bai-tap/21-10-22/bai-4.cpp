@@ -2,16 +2,21 @@
 
 int main() {
 	int n;
-	int m = 0;
-	int p;
+	int x = 0;
+	int sd;
 	
-	printf("Nhap vao so n: ");
-	scanf("%d", &n);
+	do {
+		printf("Nhap vao so n: ");
+		scanf("%d", &n);
+	}
+	while (n < 0);
+
 	
 	while (n != 0) {
-		p = n % 10;
-		m = m * 10 + p;
+		sd = n % 10;
+		x = x * 10 + sd;
 		n = n / 10;
 	}
-	printf("So nghich dao cua n la: %d", m);
+	
+	printf("So nghich dao cua n la: %d", x);
 }

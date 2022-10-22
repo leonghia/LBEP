@@ -1,20 +1,23 @@
 #include <stdio.h>
 
 int main() {
-	int n, m;
+	int n, m, i;
 	int p = 0;
-	int i = 1;
 	
-	printf("Nhap vao so n: ");
-	scanf("%d", &n);
+
+	do {
+		printf("Nhap vao so n: ");
+		scanf("%d", &n);
+	}
 	
-	while (i <= n-1) {
+	while (n < 0);	
+	
+	
+	for (i = 1; i < n; i++) {
 		if (n % i == 0) {
 			m += i;
-			i++;
 		}
 		else {
-			i++;
 		}
 	}
 	if (m == n) {
