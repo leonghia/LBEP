@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	char my_string[50], vowels[5] = {'a', 'e', 'i', 'o', 'u'};
+	char my_string[50], vowels[] = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
 	int count_vowels = 0, count_remains = 0;
 	bool vowel_existed = false;
 	
