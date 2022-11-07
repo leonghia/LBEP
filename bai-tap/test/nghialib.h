@@ -1,7 +1,7 @@
 
 int findMin(int my_array[], size_t length)
 {
-	// Find min of my array
+	// Find min of array
 	int min = my_array[0];
 	int min_position;
 	for (int i = 0; i < length; i++)
