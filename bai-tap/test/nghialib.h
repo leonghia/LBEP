@@ -1,7 +1,7 @@
 
 int smallest_index(int a[], int n)
 {
-	// Find min of array
+	// Find min
 	int min = a[0];
 	int min_index;
 	for (int i = 0; i < n; i++)
