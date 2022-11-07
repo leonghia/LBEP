@@ -1,20 +1,20 @@
-int findMin(int my_array[])
+
+int findMin(int my_array[], size_t length)
 {
-	// Find min
+	// Find min of my array
 	int min = my_array[0];
 	int min_position;
-	for (int i = 0; i < 8; i++)
+	for (int i = 0; i < length; i++)
 	{
 		if (my_array[i] < min)
 		{
 			min = my_array[i];
-			min_position = i;
 		}
 	}
 	
 	// If there is more than one such element
 	// return the smallest index
-	for (int i = 0; i < 8; i++)
+	for (int i = 0; i < length; i++)
 	{
 		if (my_array[i] == min)
 		{
